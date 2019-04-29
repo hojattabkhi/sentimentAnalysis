@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sentiment Analysis</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../static/css/font-awesome/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="../static/ajax/global_ajax.js"></script>
+
+    <style>
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  </style>
+</head>
+<body>
+<div class="jumbotron text-center">
+    <h1>تحلیل احساسات</h1>
+    <p>نظر کاربر را وارد کنید تا از مثبت یا منفی بودن قطبیت آن شما را مطلع کنیم</p>
+    <div class="input-group">
+        <input type="text" class="form-control" size="50" placeholder="نظر کاربر ..." id="search_filter">
+        <div class="input-group-btn">
+            <button id="search" onclick="getSentenceSentiment()" type="button" class="btn btn-danger">بررسی</button>
+        </div>
+    </div>
+</div>
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+    <h2>قطبیت</h2>
+    <h4>قطبیت غالب روشن می شود</h4>
+    <div class="row slideanim">
+        <div class="col-sm-4">
+            <span id="posetive_flag" class="glyphicon glyphicon-thumbs-up"></span>
+            <h4>مثبت</h4>
+            <p>۴ یا ۵ ستاره</p>
+        </div>
+        <div class="col-sm-4">
+            <span id="neural_flag" class="glyphicon glyphicon-th-large"></span>
+            <h4>خنثی</h4>
+            <p>سه ستاره یا نامشخص</p>
+        </div>
+        <div class="col-sm-4">
+            <span id="negative_flag" class="glyphicon glyphicon-thumbs-down"></span>
+            <h4>منفی</h4>
+            <p>یک یا دو ستاره</p>
+        </div>
+    </div>
+</div>
+
+<div id="wait" style="display:none;position:absolute;top:50%;left:50%;">
+    <img src='../static/images/ajax-loader4.gif' width="200" height="200" />
+    <br>لطفا صبر کنید ...
+</div>
+<!-- /#page-wrapper -->
+
+<nav class="navbar navbar-default navbar-fixed-bottom" style="min-height: 0px; margin-bottom: 0px">
+    <div title="تمامی حقوق این سامانه متعلق به آزمایشگاه پردازش زبان دانشگاه شهید بهشتی می‌باشد.">
+        <i class="fa fa-copyright fa-fw"></i>
+        آزمایشگاه پردازش زبان دانشگاه شهید بهشتی
+    </div>
+</nav>
+<!-- /#wrapper -->
+<!-- jQuery Version 1.11.0 -->
+<script src="../static/js/jquery-1.11.0.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="../static/js/bootstrap.min.js"></script>
+<script>
+    $("#search_filter").keyup(function(event) {
+        if (event.keyCode === 13) {
+            $("#search").click();
+        }
+    });
+</script>
+
+</body>
+
+</html>

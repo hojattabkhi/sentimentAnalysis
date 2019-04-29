@@ -1,0 +1,327 @@
+Loading files into memory
+Fit and tranform
+Calculating BOW
+Calculating TFIDF
+
+......................  svm.LinearSVC  Classifier ..........................
+Fold: 	1
+--------------- REPORT ---------------
+	Precision_score:	 0.932432432432
+	Recall:	 0.986798679868
+	F1_score:	 0.958845537146
+	Accuracy:	 0.925603864734
+	Confusion Matrix:
+[[ 61  65]
+ [ 12 897]]
+
+Fold: 	2
+--------------- REPORT ---------------
+	Precision_score:	 0.93447905478
+	Recall:	 0.981941309255
+	F1_score:	 0.957622454595
+	Accuracy:	 0.925603864734
+	Confusion Matrix:
+[[ 88  61]
+ [ 16 870]]
+
+Fold: 	3
+--------------- REPORT ---------------
+	Precision_score:	 0.921610169492
+	Recall:	 0.97972972973
+	F1_score:	 0.949781659389
+	Accuracy:	 0.911025145068
+	Confusion Matrix:
+[[ 72  74]
+ [ 18 870]]
+
+Fold: 	4
+--------------- REPORT ---------------
+	Precision_score:	 0.931108719053
+	Recall:	 0.970819304153
+	F1_score:	 0.950549450549
+	Accuracy:	 0.912959381044
+	Confusion Matrix:
+[[ 79  64]
+ [ 26 865]]
+
+Fold: 	5
+--------------- REPORT ---------------
+	Precision_score:	 0.923995656895
+	Recall:	 0.967045454545
+	F1_score:	 0.94503053859
+	Accuracy:	 0.904255319149
+	Confusion Matrix:
+[[ 84  70]
+ [ 29 851]]
+
+Fold: 	6
+--------------- REPORT ---------------
+	Precision_score:	 0.925925925926
+	Recall:	 0.975473801561
+	F1_score:	 0.950054288817
+	Accuracy:	 0.911025145068
+	Confusion Matrix:
+[[ 67  70]
+ [ 22 875]]
+
+Fold: 	7
+--------------- REPORT ---------------
+	Precision_score:	 0.934267241379
+	Recall:	 0.984108967083
+	F1_score:	 0.958540630182
+	Accuracy:	 0.92746615087
+	Confusion Matrix:
+[[ 92  61]
+ [ 14 867]]
+
+Fold: 	8
+--------------- REPORT ---------------
+	Precision_score:	 0.925162689805
+	Recall:	 0.978211009174
+	F1_score:	 0.950947603122
+	Accuracy:	 0.914893617021
+	Confusion Matrix:
+[[ 93  69]
+ [ 19 853]]
+
+Fold: 	9
+--------------- REPORT ---------------
+	Precision_score:	 0.91755888651
+	Recall:	 0.982798165138
+	F1_score:	 0.949058693245
+	Accuracy:	 0.911025145068
+	Confusion Matrix:
+[[ 85  77]
+ [ 15 857]]
+
+Fold: 	10
+--------------- REPORT ---------------
+	Precision_score:	 0.930158730159
+	Recall:	 0.974501108647
+	F1_score:	 0.95181375203
+	Accuracy:	 0.913926499033
+	Confusion Matrix:
+[[ 66  66]
+ [ 23 879]]
+
+Mean of  10 fold precision:	 0.927669950643
+Mean of  10 fold recall:	 0.978142752915
+Mean of  10 fold F1_score:	 0.952224460766
+Mean of  10 accuracy:	 0.915778413179
+#########################################################################
+
+
+......................  Naive_bayes  Classifier ..........................
+Fold: 	1
+--------------- REPORT ---------------
+	Precision_score:	 0.878260869565
+	Recall:	 1.0
+	F1_score:	 0.935185185185
+	Accuracy:	 0.878260869565
+	Confusion Matrix:
+[[  0 126]
+ [  0 909]]
+
+Fold: 	2
+--------------- REPORT ---------------
+	Precision_score:	 0.856038647343
+	Recall:	 1.0
+	F1_score:	 0.92243623113
+	Accuracy:	 0.856038647343
+	Confusion Matrix:
+[[  0 149]
+ [  0 886]]
+
+Fold: 	3
+--------------- REPORT ---------------
+	Precision_score:	 0.8596321394
+	Recall:	 1.0
+	F1_score:	 0.924518479958
+	Accuracy:	 0.859767891683
+	Confusion Matrix:
+[[  1 145]
+ [  0 888]]
+
+Fold: 	4
+--------------- REPORT ---------------
+	Precision_score:	 0.86170212766
+	Recall:	 1.0
+	F1_score:	 0.925714285714
+	Accuracy:	 0.86170212766
+	Confusion Matrix:
+[[  0 143]
+ [  0 891]]
+
+Fold: 	5
+--------------- REPORT ---------------
+	Precision_score:	 0.851063829787
+	Recall:	 1.0
+	F1_score:	 0.919540229885
+	Accuracy:	 0.851063829787
+	Confusion Matrix:
+[[  0 154]
+ [  0 880]]
+
+Fold: 	6
+--------------- REPORT ---------------
+	Precision_score:	 0.86750483559
+	Recall:	 1.0
+	F1_score:	 0.929052304505
+	Accuracy:	 0.86750483559
+	Confusion Matrix:
+[[  0 137]
+ [  0 897]]
+
+Fold: 	7
+--------------- REPORT ---------------
+	Precision_score:	 0.852855759923
+	Recall:	 1.0
+	F1_score:	 0.920585161964
+	Accuracy:	 0.852998065764
+	Confusion Matrix:
+[[  1 152]
+ [  0 881]]
+
+Fold: 	8
+--------------- REPORT ---------------
+	Precision_score:	 0.843175217812
+	Recall:	 0.998853211009
+	F1_score:	 0.914435695538
+	Accuracy:	 0.842359767892
+	Confusion Matrix:
+[[  0 162]
+ [  1 871]]
+
+Fold: 	9
+--------------- REPORT ---------------
+	Precision_score:	 0.843175217812
+	Recall:	 0.998853211009
+	F1_score:	 0.914435695538
+	Accuracy:	 0.842359767892
+	Confusion Matrix:
+[[  0 162]
+ [  1 871]]
+
+Fold: 	10
+--------------- REPORT ---------------
+	Precision_score:	 0.872340425532
+	Recall:	 1.0
+	F1_score:	 0.931818181818
+	Accuracy:	 0.872340425532
+	Confusion Matrix:
+[[  0 132]
+ [  0 902]]
+
+Mean of  10 fold precision:	 0.858574907042
+Mean of  10 fold recall:	 0.999770642202
+Mean of  10 fold F1_score:	 0.923772145124
+Mean of  10 accuracy:	 0.858439622871
+#########################################################################
+
+
+......................  KNeighbors  Classifier ..........................
+Fold: 	1
+--------------- REPORT ---------------
+	Precision_score:	 0.900596421471
+	Recall:	 0.996699669967
+	F1_score:	 0.946214099217
+	Accuracy:	 0.900483091787
+	Confusion Matrix:
+[[ 26 100]
+ [  3 906]]
+
+Fold: 	2
+--------------- REPORT ---------------
+	Precision_score:	 0.876739562624
+	Recall:	 0.995485327314
+	F1_score:	 0.932346723044
+	Accuracy:	 0.876328502415
+	Confusion Matrix:
+[[ 25 124]
+ [  4 882]]
+
+Fold: 	3
+--------------- REPORT ---------------
+	Precision_score:	 0.882470119522
+	Recall:	 0.997747747748
+	F1_score:	 0.936575052854
+	Accuracy:	 0.883945841393
+	Confusion Matrix:
+[[ 28 118]
+ [  2 886]]
+
+Fold: 	4
+--------------- REPORT ---------------
+	Precision_score:	 0.880079286422
+	Recall:	 0.996632996633
+	F1_score:	 0.934736842105
+	Accuracy:	 0.880077369439
+	Confusion Matrix:
+[[ 22 121]
+ [  3 888]]
+
+Fold: 	5
+--------------- REPORT ---------------
+	Precision_score:	 0.87090367428
+	Recall:	 0.996590909091
+	F1_score:	 0.929517753047
+	Accuracy:	 0.871373307544
+	Confusion Matrix:
+[[ 24 130]
+ [  3 877]]
+
+Fold: 	6
+--------------- REPORT ---------------
+	Precision_score:	 0.890329012961
+	Recall:	 0.995540691193
+	F1_score:	 0.94
+	Accuracy:	 0.889748549323
+	Confusion Matrix:
+[[ 27 110]
+ [  4 893]]
+
+Fold: 	7
+--------------- REPORT ---------------
+	Precision_score:	 0.881644934804
+	Recall:	 0.99772985244
+	F1_score:	 0.936102236422
+	Accuracy:	 0.883945841393
+	Confusion Matrix:
+[[ 35 118]
+ [  2 879]]
+
+Fold: 	8
+--------------- REPORT ---------------
+	Precision_score:	 0.869477911647
+	Recall:	 0.993119266055
+	F1_score:	 0.927194860814
+	Accuracy:	 0.868471953578
+	Confusion Matrix:
+[[ 32 130]
+ [  6 866]]
+
+Fold: 	9
+--------------- REPORT ---------------
+	Precision_score:	 0.869
+	Recall:	 0.996559633028
+	F1_score:	 0.928418803419
+	Accuracy:	 0.870406189555
+	Confusion Matrix:
+[[ 31 131]
+ [  3 869]]
+
+Fold: 	10
+--------------- REPORT ---------------
+	Precision_score:	 0.890873015873
+	Recall:	 0.9955654102
+	F1_score:	 0.940314136126
+	Accuracy:	 0.889748549323
+	Confusion Matrix:
+[[ 22 110]
+ [  4 898]]
+
+Mean of  10 fold precision:	 0.88121139396
+Mean of  10 fold recall:	 0.996167150367
+Mean of  10 fold F1_score:	 0.935142050705
+Mean of  10 accuracy:	 0.881452919575
+#########################################################################
